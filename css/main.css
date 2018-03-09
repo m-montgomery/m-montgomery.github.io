@@ -1,7 +1,15 @@
-
 body {
-    margin: 60px auto;
-    width: 70%;
+    background: #bfbfbf;
+}
+
+.container {
+    margin: 0 10%;
+    width: 80%;
+}
+
+nav {
+    height: 50px;
+    border-bottom: 2px solid #646464;
 }
 
 nav ul, footer ul {
@@ -13,8 +21,32 @@ nav ul {
     font-size: 1.5em;
 }
 
-nav ul li, footer ul li {
+nav ul li {
     display: inline;
+    padding-right: 40px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #37344c;
+}
+
+footer ul a {
+    color: #ffffff;
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    font-size: 1em;
+    position: fixed;
+    bottom: 0;
+    background: #37344c;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 20px;
 }
 
 a {
@@ -37,8 +69,4 @@ p {
     color: #000000;
 }
 
-footer {
-    border-top: 2px dashed #646464;
-    font-size: 1em;
-}
 

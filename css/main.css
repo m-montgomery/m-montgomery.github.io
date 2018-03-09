@@ -1,0 +1,44 @@
+
+body {
+    margin: 60px auto;
+    width: 70%;
+}
+
+nav ul, footer ul {
+    font-family: 'Arial', 'Sans-Serif';
+    font-weight: bold;
+}
+
+nav ul {
+    font-size: 1.5em;
+}
+
+nav ul li, footer ul li {
+    display: inline;
+}
+
+a {
+    color: #111765;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #104b50;
+}
+
+h1 {
+    font-family: 'Arial', 'Sans-Serif';
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: 'Serif';
+    color: #000000;
+}
+
+footer {
+    border-top: 2px dashed #646464;
+    font-size: 1em;
+}
+

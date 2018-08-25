@@ -1,26 +1,22 @@
 
 // define header link titles
 var titles = {
-    "Home"     : "This site's homepage",
-    "About Me" : "Get to know me better!",
-    "Resume"   : "Download my resume here",
-    "Projects" : "Example coding projects"
+    "home"     : "This site's homepage",
+    "about"    : "Get to know me better!",
+    "resume"   : "Download my resume here",
+    "projects" : "Example coding projects"
 }
 
 // set hover actions for header elements
-var headerList = document.getElementById("header").children;
+var headerList = document.getElementsByClassName("header-text");
 for (var i = 0; i < headerList.length; i++) {
-
-    // skip list item if no link
-    if (headerList[i].children.length == 0)
-	continue;
     
     // add action to link
-    headerList[i].children[0].onmouseover = function() {
+    headerList[i].onmouseover = function() {
 	if (window.location.href == this.href)
 	    this.setAttribute("title", "You're already here!");
 	else 
-	    this.setAttribute("title", titles[this.text]);
+	    this.setAttribute("title", titles[this.id]);
     };
 }
 

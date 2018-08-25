@@ -1,75 +1,105 @@
+
+/* Define main container styles. */
 html, body {
     height: 100%;
     margin: 0;
 }
-
 body {
-    background: #bfbfbf;
-}
+    /* Define website color scheme. */
+    --darkpurple:  #37344c;
+    --lightpurple: #bfbfbf;
+    --lightgray:   #646464;
+    --lightblue:   #c3cbf7;
+    --darkteal:    #22577f;
+    --darkblue:    #111765;
 
+    background: var(--lightpurple);
+}
 .container {
     margin: 10%;
 }
 
-nav {
-    background: #bfbfbf;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    border-bottom: 2px solid #646464;
-}
 
-nav ul, footer ul {
+/* Define header styles. */
+h1 {
     font-family: 'Arial', 'Sans-Serif';
-    font-weight: bold;
-    font-size: 1.5em;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'Arial', 'Sans-Serif';
+    font-size: 1.75em;
+    text-decoration: underline;
 }
 
+
+/* Define basic text and list styles. */
+p {
+    font-size: 1.5em;
+    font-family: 'Serif';
+    color: black;
+}
 ul li {
     display: inline;
     padding-right: 40px;
 }
 
-nav ul a {
+
+/* Define link styles. */
+a {
+    color: var(--darkblue);
+}
+a:hover {
+    color: var(--darkteal);
+}
+
+
+/* Define navigation (header) bar style. */
+.nav {
+    background: var(--lightpurple);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid var(--lightgray);
+}
+
+
+/* Define navigation (header) link styles. */
+.header-text {
+    font-family: 'Arial', 'Sans-Serif';
+    font-weight: bold;
+    font-size: 1.75em;
+
     text-decoration: none;
-    color: #37344c;
+    color: white;
+    background: var(--darkpurple);
+
+    padding: 10px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+.header-text:hover {
+    background: var(--lightblue);
 }
 
-footer ul a {
-    color: #ffffff;
-}
 
+/* Define footer bar style. */
 footer {
+    background: var(--darkpurple);
     width: 100%;
     position: fixed;
     bottom: 0;
-    background: #37344c;
 }
 
-a {
-    color: #111765;
-}
 
-a:hover {
-    text-decoration: underline;
-    color: #22577f;
-}
-
-footer a:hover {
-    color: #c3cbf7;
-}
-
-h1 {
+/* Define footer link styles. */
+.footer-text {
     font-family: 'Arial', 'Sans-Serif';
-    font-size: 3em;
-}
-
-h2 {
-    font-family: 'Arial', 'Sans-Serif';
-}
-
-p {
+    font-weight: bold;
     font-size: 1.5em;
-    font-family: 'Serif';
-    color: #000000;
+    color: white;
+}
+.footer-text:hover {
+    color: var(--lightblue);
 }

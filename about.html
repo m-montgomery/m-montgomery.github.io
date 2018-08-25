@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
     <title>About Me</title>
+    
+    
+    <meta charset="utf-8"/>
+    <meta name="author" content="Maya Montgomery"/>
+    <meta name="description" content="Personal website of Maya Montgomery."/>
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
   <body>
-    <nav>
+    <div class="nav">
       <ul id="header">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a class="header-text" id="home" href="index.html">Home</a></li>
+        <li><a class="header-text" id="about" href="about.html">About Me</a></li>
+        <li><a class="header-text" id="resume" href="resume.html">Resume</a></li>
+        <li><a class="header-text" id="projects" href="projects.html">Projects</a></li>
       </ul>
-    </nav>
+    </div>
         
     <div class="container">
       <h1>About Me</h1>
 
       <!-- Portland Stag Photo -->
-      <img style="float: right; margin: 0 0 20px 20px;" src="images/Portland_Oregon.jpg" width="35%"/>
+      <a href="https://en.wikipedia.org/wiki/White_Stag_sign" target="_blank"><img style="float: right; margin: 0 0 20px 20px;" src="images/Portland_Oregon.jpg" width="35%"/></a>
       
       <h2>Background</h2>
-      <p>Born and raised in the beautiful Northwest USA, I'm a proud Oregonian. Starting at age five, I enrolled in a Japanese immersion program in the Portland Public Schools system. Thirteen years later, I graduated from the immersion program and from Ulysses S. Grant High School as a valedictorian. </p>
+      <p>Born and raised in the beautiful Northwest USA, I'm a proud Oregonian. Starting at age five, I enrolled in a <a href="https://www.pps.net/Page/3431" target="_blank">Japanese immersion program</a> in the Portland Public Schools system. Thirteen years later, I graduated from the immersion program and from Ulysses S. Grant High School as a valedictorian. </p>
       
       <p>I attended Hamilton College in upstate New York for my undergraduate and received my degree on May 20th 2018. I continued with my Japanese studies in college, but I also stumbled across a new passion: computer science. From the very first class I took (an OOP course in Python), I was hooked. I loved solving puzzles, learning new programming languages, and writing effective and readable code. </p>
       
@@ -33,7 +38,7 @@
       <h2>Interests</h2>
 
       <!-- Regionals Photo -->
-      <img style="float: left; margin: 0 20px 20px 0;" src="images/Regionals.JPG" width="35%"/>
+      <a href="http://oregonrowing.org" target="_blank"><img style="float: left; margin: 0 20px 20px 0;" src="images/Regionals.JPG" width="35%"/></a>
 
       <p>I was an avid reader as a child - my favorite was fantasy. I've since expanded my reading list somewhat but definitely still enjoy stories with adventure and wonder. One of my favorite authors is Terry Pratchett. </p>
 
@@ -46,13 +51,13 @@
     <!-- Contact info -->
     <footer>
       <ul>
-        <li><a href="mailto:mmontgomery@protonmail.com">Email me</a></li>
-        <li><a href="https://github.com/m-montgomery">View my Github</a></li>
-        <li><a href="https://www.linkedin.com/in/mayaumontgomery/">Visit my LinkedIn</a></li>
+        <li><a class="footer-text" href="mailto:mmontgomery@protonmail.com">Email me</a></li>
+        <li><a class="footer-text" href="https://github.com/m-montgomery" target="_blank">View my Github</a></li>
+        <li><a class="footer-text" href="https://www.linkedin.com/in/mayaumontgomery/" target="_blank">Visit my LinkedIn</a></li>
       </ul>
     </footer>
+
+    <script src="script.js"></script>
+    
   </body>
-
-  <script src="script.js"></script>
-
 </html>

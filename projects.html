@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
     <title>Projects</title>
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Maya Montgomery"/>
+    <meta name="description" content="Personal website of Maya Montgomery."/>
+    
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
   <body>
-    <nav>
+    <div class="nav">
       <ul id="header">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a class="header-text" id="home" href="index.html">Home</a></li>
+        <li><a class="header-text" id="about" href="about.html">About Me</a></li>
+        <li><a class="header-text" id="resume" href="resume.html">Resume</a></li>
+        <li><a class="header-text" id="projects" href="projects.html">Projects</a></li>
       </ul>
-    </nav>
+    </div>
         
     <div class="container">
       <h1>Projects</h1>
       
       <h2>HALTING: Senior Honors Thesis</h2>
-      <p>In my final semester as an undergraduate student, in fulfillment of a programming-intensive computer science honors thesis, I designed and implemented from scratch a GUI application for simulating finite automata. The application is written in Java; to see its code, read the user's manual, or download the application to run it, <a href="https://github.com/m-montgomery/HALTING">see its Github</a>. </p>
+      <p>In my final semester as an undergraduate student, in fulfillment of a programming-intensive computer science honors thesis, I designed and implemented from scratch a GUI application for simulating finite automata. The application is written in Java; to see its code, read the user's manual, or download the application to run it, <a href="https://github.com/m-montgomery/HALTING" target="_blank">see its Github</a>. </p>
 
-      <p>HALTING (or: Honors Automata Language Theory Including Navigable Graphics) allows the user to quickly build, edit, and run deterministic finite automata. Finite automata (or finite-state machines) are an abstract concept used in computational theory. </p>
+      <p>HALTING (or: Honors Automata Language Theory Including Navigable Graphics) allows the user to quickly build, edit, and run deterministic finite automata. Finite automata (or <a href="https://en.wikipedia.org/wiki/Finite-state_machine" target="_blank">finite-state machines</a>) are an abstract concept used in computational theory. </p>
+
+      <img src="images/Example_DFA.png" style="float: right; margin: 0 0 20px 20px;" width="40%"/>
 
       <p>An automaton is graphically represented per classroom standard: each state is a circle, and transitions are depicted as arrows. After entering an input string, users can simply view the end result (accept or reject) or can step through the input one character at a time, watching the machine transition through its states. Automata can also be saved and loaded, which can greatly improve the efficiency of classtime. </p>
+
+      <p>Check out the <a href="https://github.com/m-montgomery/HALTING/blob/master/src/resources/UserManual.pdf" target="_blank">user's manual</a> for directions on using HALTING. </p>
       <br>
       
       <h2>CSPy: Summer Research</h2>
@@ -36,13 +44,13 @@
     <!-- Contact info -->
     <footer>
       <ul>
-        <li><a href="mailto:mmontgomery@protonmail.com">Email me</a></li>
-        <li><a href="https://github.com/m-montgomery">View my Github</a></li>
-        <li><a href="https://www.linkedin.com/in/mayaumontgomery/">Visit my LinkedIn</a></li>
+        <li><a class="footer-text" href="mailto:mmontgomery@protonmail.com">Email me</a></li>
+        <li><a class="footer-text" href="https://github.com/m-montgomery" target="_blank">View my Github</a></li>
+        <li><a class="footer-text" href="https://www.linkedin.com/in/mayaumontgomery/" target="_blank">Visit my LinkedIn</a></li>
       </ul>
     </footer>
+
+    <script src="script.js"></script>
+    
   </body>
-
-  <script src="script.js"></script>
-
 </html>

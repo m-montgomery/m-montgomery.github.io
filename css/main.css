@@ -78,6 +78,8 @@ a:hover {
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
+
+    transition: background 400ms ease-in-out;
 }
 .header-text:hover {
     background: var(--lightblue);
@@ -99,6 +101,8 @@ footer {
     font-weight: bold;
     font-size: 1.5em;
     color: white;
+
+    transition: color 300ms ease-in-out;
 }
 .footer-text:hover {
     color: var(--lightblue);

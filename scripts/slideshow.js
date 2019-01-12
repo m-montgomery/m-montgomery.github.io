@@ -12,7 +12,7 @@ function slideshow () {
     photos[photoIndex].style.display = "inline";
 
     // pause to display photo
-    setTimeout(slideshow, 5000);
+    setTimeout(slideshow, 4500);
 
 }
 slideshow();

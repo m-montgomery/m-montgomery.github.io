@@ -6,35 +6,54 @@
     <meta charset="utf-8"/>
     <meta name="author" content="Maya Montgomery"/>
     <meta name="description" content="Personal website of Maya Montgomery."/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
   <body>
-    <div class="nav">
-      <ul id="header">
-        <li><a class="header-text" id="home" href="index.html">Home</a></li>
-        <li><a class="header-text" id="about" href="about.html">About Me</a></li>
-        <li><a class="header-text" id="resume" href="resume.html">Resume</a></li>
-        <li><a class="header-text" id="projects" href="projects.html">Projects</a></li>
-      </ul>
-    </div>
     
-    <div class="container">
-      <h1>Resume</h1>
-      <p>
-	<a href="Montgomery_Resume.pdf">Download my resume as a PDF here. </a>
-      </p>
+    <!-- Header -->
+    <div class="row">
+      <h1 class="col-12">Resume</h1>
+    </div>
+    <div class="row header">
+	<ul>
+	  <a class="header-text" id="home" href="index.html"><li class="col-2">Home</li></a>
+	  <a class="header-text" id="about" href="about.html"><li class="col-2">About Me</li></a>
+	  <a class="header-text" id="resume" href="resume.html"><li class="col-2">Resume</li></a>
+	  <a class="header-text" id="projects" href="projects.html"><li class="col-2">Projects</li></a>
+	</ul>
+    </div>
+        
+    <!-- Main content -->
+    <div class="row">
+
+      <!-- Body text -->
+      <div class="col-2 hide"></div>
+      <div class="col-8 main-text">
+	<br><br>
+	<p style="text-align:center">
+	  <a href="Montgomery_Resume.pdf">Download my resume as a PDF here. </a>
+	</p>
+	<br><br>
+      </div>
+      <div class="col-2 hide"></div>
     </div>
 
-    <!-- Contact info -->
-    <footer>
-      <ul>
-        <li><a class="footer-text" href="mailto:mmontgomery@protonmail.com">Email me</a></li>
-        <li><a class="footer-text" href="https://github.com/m-montgomery" target="_blank">View my Github</a></li>
-        <li><a class="footer-text" href="https://www.linkedin.com/in/mayaumontgomery/" target="_blank">Visit my LinkedIn</a></li>
-      </ul>
-    </footer>
+    <!-- Footer -->
+    <div class="row">
+      <div class="col-12 footer">
+	<div class="col-3"></div>
+	<ul>
+          <li class="col-2"><a href="mailto:mmontgomery@protonmail.com"                           >Email me</a></li>
+          <li class="col-2"><a href="https://github.com/m-montgomery" target="_blank"             >View my Github</a></li>
+          <li class="col-2"><a href="https://www.linkedin.com/in/mayaumontgomery/" target="_blank">Visit my LinkedIn</a></li>
+	</ul>
+	<div class="col-3"></div>
+      </div>
+    </div>
 
     <script src="scripts/script.js"></script>
     

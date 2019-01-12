@@ -3,59 +3,78 @@
   <head>
     <title>About Me</title>
     
-    
     <meta charset="utf-8"/>
     <meta name="author" content="Maya Montgomery"/>
     <meta name="description" content="Personal website of Maya Montgomery."/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
   <body>
-    <div class="nav">
-      <ul id="header">
-        <li><a class="header-text" id="home" href="index.html">Home</a></li>
-        <li><a class="header-text" id="about" href="about.html">About Me</a></li>
-        <li><a class="header-text" id="resume" href="resume.html">Resume</a></li>
-        <li><a class="header-text" id="projects" href="projects.html">Projects</a></li>
-      </ul>
+    
+    <!-- Header -->
+    <div class="row">
+      <h1 class="col-12">About Me</h1>
+    </div>
+    <div class="row header">
+	<ul>
+	  <a class="header-text" id="home" href="index.html"><li class="col-2">Home</li></a>
+	  <a class="header-text" id="about" href="about.html"><li class="col-2">About Me</li></a>
+	  <a class="header-text" id="resume" href="resume.html"><li class="col-2">Resume</li></a>
+	  <a class="header-text" id="projects" href="projects.html"><li class="col-2">Projects</li></a>
+	</ul>
     </div>
         
-    <div class="container">
-      <h1>About Me</h1>
+    <!-- Background content -->
+    <div class="row">
 
-      <!-- Portland Stag Photo -->
-      <a href="https://en.wikipedia.org/wiki/White_Stag_sign" target="_blank"><img style="float: right; margin: 0 0 20px 20px;" src="images/Portland_Oregon.jpg" width="35%"/></a>
-      
-      <h2>Background</h2>
-      <p>Born and raised in the beautiful Northwest USA, I'm a proud Oregonian. Starting at age five, I enrolled in a <a href="https://www.pps.net/Page/3431" target="_blank">Japanese immersion program</a> in the Portland Public Schools system. Thirteen years later, I graduated from the immersion program and from Ulysses S. Grant High School as a valedictorian. </p>
-      
-      <p>I attended Hamilton College in upstate New York for my undergraduate and received my degree on May 20th 2018. I continued with my Japanese studies in college, but I also stumbled across a new passion: computer science. From the very first class I took (an OOP course in Python), I was hooked. I loved solving puzzles, learning new programming languages, and writing effective and readable code. </p>
-      
-      <p>Now, after graduating as a double major in Computer Science and Asian Studies, I am pursuing a career in computer science. I'm open to exploring different roles and specialties - as long as I can continue coding! </p>
-      <br>
-      
-      <h2>Interests</h2>
+      <!-- Body text -->
+      <div class="col-8 main-text">
+      	<h2>Background</h2>
+	<p>Born and raised in the beautiful Northwest USA, I'm a proud Oregonian. Starting at age five, I enrolled in a <a href="https://www.pps.net/Page/3431" target="_blank">Japanese immersion program</a> in the Portland Public Schools system. Thirteen years later, I graduated from the immersion program and from Ulysses S. Grant High School as a valedictorian. </p>
+	<p>I attended Hamilton College in upstate New York for my undergraduate and received my degree on May 20th 2018. I continued with my Japanese studies in college, but I also stumbled across a new passion: computer science. From the very first class I took (an OOP course in Python), I was hooked. I loved solving puzzles, learning new programming languages, and writing effective and readable code. </p>      
+	<p>Now, after graduating as a double major in Computer Science and Asian Studies, I am pursuing a career in computer science. I'm open to exploring different roles and specialties - as long as I can continue coding! </p>
+      </div>
 
-      <!-- Regionals Photo -->
-      <a href="http://oregonrowing.org" target="_blank"><img style="float: left; margin: 0 20px 20px 0;" src="images/Regionals.JPG" width="35%"/></a>
-
-      <p>I was an avid reader as a child - my favorite was fantasy. I've since expanded my reading list somewhat but definitely still enjoy stories with adventure and wonder. One of my favorite authors is Terry Pratchett. </p>
-
-      <p>Besides reading, I also enjoy creative activities like knitting, writing, and drawing in my free time. I love to create; that's partly why coding fascinates me! </p>
-
-      <p>In terms of more active hobbies, I rowed on a crew team for four years during high school, and in college I played rugby. I'd love to get back on the water someday, but for now I'll content myself with bike rides and hikes. </p>
-      
+      <!-- Portland Stag image -->
+      <div class="col-4">
+	<a href="https://en.wikipedia.org/wiki/White_Stag_sign" target="_blank"><img src="images/Portland_Oregon.jpg"/></a>
+      </div>
     </div>
 
-    <!-- Contact info -->
-    <footer>
-      <ul>
-        <li><a class="footer-text" href="mailto:mmontgomery@protonmail.com">Email me</a></li>
-        <li><a class="footer-text" href="https://github.com/m-montgomery" target="_blank">View my Github</a></li>
-        <li><a class="footer-text" href="https://www.linkedin.com/in/mayaumontgomery/" target="_blank">Visit my LinkedIn</a></li>
-      </ul>
-    </footer>
+    
+    <!-- Interests content -->
+    <div class="row">
+
+      <!-- Body text -->
+      <div class="col-8 main-text">
+      	<h2>Interests</h2>
+	<p>I was an avid reader as a child - my favorite was fantasy. I've since expanded my reading list somewhat but definitely still enjoy stories with adventure and wonder. One of my favorite authors is Terry Pratchett. </p>
+	<p>Besides reading, I also enjoy creative activities like knitting, writing, and drawing in my free time. I love to create; that's partly why coding fascinates me! </p>
+	<p>In terms of more active hobbies, I rowed on a crew team for four years during high school, and in college I played rugby. I'd love to get back on the water someday, but for now I'll content myself with bike rides and hikes. </p>
+      </div>
+
+      <!-- Regionals image -->
+      <div class="col-4">
+	<a href="http://oregonrowing.org" target="_blank"><img src="images/Regionals.JPG"/></a>
+      </div>
+    </div>
+
+    
+      <!-- Footer -->
+    <div class="row">
+      <div class="col-12 footer">
+	<div class="col-3"></div>
+	<ul>
+          <li class="col-2"><a href="mailto:mmontgomery@protonmail.com"                           >Email me</a></li>
+          <li class="col-2"><a href="https://github.com/m-montgomery" target="_blank"             >View my Github</a></li>
+          <li class="col-2"><a href="https://www.linkedin.com/in/mayaumontgomery/" target="_blank">Visit my LinkedIn</a></li>
+	</ul>
+	<div class="col-3"></div>
+      </div>
+    </div>
 
     <script src="scripts/script.js"></script>
     

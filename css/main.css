@@ -1,11 +1,24 @@
 
-/* Define main container styles. */
-html, body {
+/* Define layout styles. */
+* {
+    box-sizing: border-box;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Define main container & color scheme. */
+body {
     height: 100%;
     margin: 0;
-}
-body {
-    /* Define website color scheme. */
+    
     --darkpurple:  #37344c;
     --lightpurple: #bfbfbf;
     --lightgray:   #646464;
@@ -15,15 +28,15 @@ body {
 
     background: var(--lightpurple);
 }
-.container {
-    margin: 10%;
-}
 
 
 /* Define header styles. */
 h1 {
     font-family: 'Arial', 'Sans-Serif';
-    font-size: 3em;
+    font-size: 2em;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 0;
 }
 h2 {
     font-family: 'Arial', 'Sans-Serif';
@@ -32,15 +45,76 @@ h2 {
 }
 
 
-/* Define basic text and list styles. */
+/* Define basic text style. */
 p {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-family: 'Serif';
     color: black;
 }
-ul li {
-    display: inline;
-    padding-right: 40px;
+
+
+/* Define image style. */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Define header bar style. */
+.header {
+    border-bottom: 2px solid var(--lightgray);
+    padding: 15px;
+    padding-top: 0;
+}
+
+/* Define header list item style. */
+.header li {
+    font-family: 'Arial', 'Sans-Serif';
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    
+    background: var(--darkpurple);
+    padding: 10px;
+    
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+
+    transition: background 400ms ease-in-out;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.header li:hover {
+    background: var(--lightblue);
+}
+
+
+/* Define footer bar style. */
+.footer {
+    background: var(--darkpurple);
+}
+
+/* Define footer list item style. */
+.footer li {
+    font-family: 'Arial', 'Sans-Serif';
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+
+    padding: 10px;
+}
+
+
+/* Define header, footer unordered list style. */
+.header ul, .footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -51,59 +125,43 @@ a {
 a:hover {
     color: var(--darkteal);
 }
-
-
-/* Define navigation (header) bar style. */
-.nav {
-    background: var(--lightpurple);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    border-bottom: 2px solid var(--lightgray);
-}
-
-
-/* Define navigation (header) link styles. */
-.header-text {
-    font-family: 'Arial', 'Sans-Serif';
-    font-weight: bold;
-    font-size: 1.75em;
-
-    text-decoration: none;
+.footer a {
     color: white;
-    background: var(--darkpurple);
-
-    padding: 10px;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
-
-    transition: background 400ms ease-in-out;
-}
-.header-text:hover {
-    background: var(--lightblue);
-}
-
-
-/* Define footer bar style. */
-footer {
-    background: var(--darkpurple);
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-
-/* Define footer link styles. */
-.footer-text {
-    font-family: 'Arial', 'Sans-Serif';
-    font-weight: bold;
-    font-size: 1.5em;
-    color: white;
-
     transition: color 300ms ease-in-out;
 }
-.footer-text:hover {
+.footer a:hover {
     color: var(--lightblue);
 }
+
+
+
+/* Define grid column widths */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .hide { display: none }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 769px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    h1 {
+	text-align: left;
+	font-size: 2.5em;
+    }
+} 

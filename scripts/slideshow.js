@@ -9,7 +9,7 @@ function slideshow () {
     photoIndex = (photoIndex + 1) % photos.length;
 
     // show next photo
-    photos[photoIndex].style.display = "inline";
+    photos[photoIndex].style.display = "block";
 
     // pause to display photo
     setTimeout(slideshow, 4500);

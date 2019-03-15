@@ -4,7 +4,7 @@ var titles = {
     "home"     : "This site's homepage",
     "about"    : "Get to know me better!",
     "resume"   : "Download my resume here",
-    "projects" : "Example coding projects"
+    "projects" : "See example coding projects"
 }
 
 // set hover actions for header elements

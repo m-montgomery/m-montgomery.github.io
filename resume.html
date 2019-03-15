@@ -19,40 +19,151 @@
       <h1 class="col-12">Resume</h1>
     </div>
     <div class="row header">
-	<ul>
-	  <a class="header-text" id="home" href="index.html"><li class="col-2">Home</li></a>
-	  <a class="header-text" id="about" href="about.html"><li class="col-2">About Me</li></a>
-	  <a class="header-text" id="resume" href="resume.html"><li class="col-2">Resume</li></a>
-	  <a class="header-text" id="projects" href="projects.html"><li class="col-2">Projects</li></a>
-	</ul>
+      <ul>
+	<a id="home"     href="index.html">    <li class="col-2">Home</li></a>
+	<a id="about"    href="about.html">    <li class="col-2">About Me</li></a>
+	<a id="resume"   href="resume.html">   <li class="col-2">Resume</li></a>
+	<a id="projects" href="projects.html"> <li class="col-2">Projects</li></a>
+      </ul>
     </div>
-        
-    <!-- Main content -->
-    <div class="row">
 
-      <!-- Body text -->
+
+    <!-- PDF link -->
+    <div class="row header" style="padding-bottom: 0">
       <div class="col-2 hide"></div>
-      <div class="col-8 main-text">
-	<br><br>
-	<p style="text-align:center">
-	  <a href="Montgomery_Resume.pdf">Download my resume as a PDF here. </a>
-	</p>
-	<br><br>
+      <div class="col-8 main-text" style="padding-bottom: 0; padding-top: 0">
+	<p>View details of my professional and educational history here, or <a href="Montgomery_Resume.pdf">download the PDF version</a>. </p>
       </div>
       <div class="col-2 hide"></div>
     </div>
 
+
+    <!-- Resume content -->
+    <div class="row">
+
+      <!-- left column -->
+      <div class="col-6 main-text" style="padding-top: 0">
+
+	<!-- work experience content -->
+	<h2 id="work-experience">Work Experience</h2>
+
+	<h3>Huntington National Bank</h3>
+	<p><i>Programmer Analyst</i> (June 2018 - March 2019)</p>
+	<ul>
+	  <li>Supported development and maintenance of banking item processing systems such as DSS TRIPS</li>
+	  <li>Modified vendor software and wrote new programs to support user and management needs, e.g. Developed an application to traverse, view, and edit banking standard X937 files (C#, .NET)</li>
+	  <li>Assisted in troubleshooting and managing databases; maintained and developed scripts (SQL Server)</li>
+	  <li>Extensively documented procedures and team workflow for future onboarding resources</li>
+	</ul>
+
+	<h3>IBM</h3>
+	<p><i>Blockchain Software Performance Analysis Intern</i> (May - August 2017)</p>
+	<ul>
+	  <li>Developed automation to improve blockchain performance testing</li>
+	  <li>Optimized data analysis with script reducing SAR data by 99.95%, enabling crucial reporting</li>
+	  <li>Organized measurement process by documenting scripts and team procedures</li>
+	</ul>
+	
+	<h3>Hamilton College</h3>
+	<p><i>Computer Science Teaching Assistant</i> (January 2015 - May 2018)</p>
+	<ul>
+	  <li>Mentored students during and after class; explained computing concepts</li>
+	  <li>Co-planned and taught an experimental origami and programming course using <a href="https://processing.org/" target="_blank">Processing</a></li>
+	  <li>Graded programming projects and exams; provided detailed feedback</li>
+	</ul>
+
+	<p><i>IT Help Desk Assistant</i> (April 2016 - May 2018)</p>
+	<ul>
+	  <li>Troubleshot and identified clients’ technology problems in person and via phone and email</li>
+	  <li>Researched, applied, and documented solutions with timely customer service</li>
+	  <li>As a 2nd tier assistant, trained and supervised help desk employees</li>
+	</ul>
+
+	<p><i>Computer Science Researcher</i> (May - July 2016)</p>
+	<ul>
+	  <li>Developed compiler for statically-typed dialect of Python intended for introductory education</li>
+	  <li>For more details on this project, see my <a href="projects.html#CSPy" target="_blank">Projects page</a></li>
+	</ul>
+      </div>
+
+      <!-- right column -->
+      <div class="col-6 main-text" style="padding-top: 0">
+
+	<!-- education content -->
+	<p class="mobile-only" style="border-bottom: 2px solid black"></p>
+	<h2 id="education">Education</h2>
+	<p>Received a Bachelor of Arts in Computer Science and Asian Studies from Hamilton College in Clinton, NY (May 2018).</p>
+	<ul>
+	  <li>Graduated <i>Summa cum laude</i> with GPA of 3.96</li>
+	  <li>Achieved dual departmental honors for double concentration</li>
+	  <li>Computer Science honors thesis: <a href="projects.html#HALTING" target="_blank">GUI application</a> for building and running finite automata</li>
+	</ul>
+
+	<!-- skills content -->
+	<p style="border-bottom: 2px solid black"></p>
+      	<h2 id="skills">Skills</h2>
+	<h3>Programming Languages</h3>
+	<p><i>Proficient:</i></p>
+	<ul style="columns: 2">
+	  <li>Python</li>
+	  <li>C++</li>
+	  <li>Java</li>
+	  <li>C#</li>
+	  <li>SQL Server</li>
+	</ul>
+	<p><i>Experience with:</i></p>
+	<ul style="columns: 2">
+	  <li>Bash</li>
+	  <li>HTML/CSS</li>
+	  <li>JavaScript</li>
+	  <li>Scheme</li>
+	  <li>x86 assembly</li>
+	  <li>Processing</li>
+	</ul>
+	
+	<h3>Technology & Software</h3>
+	<ul style="columns: 2">
+	  <li>Linux</li>
+	  <li>Git</li>
+	  <li>Eclipse</li>
+	  <li>Visual Studio</li>
+	  <li>SQL Server Management Studio</li>
+	  <li>Microsoft Office</li>
+	</ul>
+
+	<h3>Non-technical</h3>
+	<ul style="columns: 2">
+	  <li>Detail-oriented</li>
+	  <li>Quick learner</li>
+	  <li>Articulate communicator</li>
+	  <li>Japanese language and cultural competency from <a href="about.html#school" target="_blank">17 years of education</a></li>
+	</ul>
+
+	<!-- misc. achievements content -->
+	<p style="border-bottom: 2px solid black"></p>
+	<h2 id="achievements">Achievements</h2>
+	<ul>
+	  <li>Elected to Phi Beta Kappa, academic honor society</li>
+	  <li>Elected to Phi Sigma Iota, foreign languages honor society (Hamilton College 2018)</li>
+	  <li>Winner of The Sam Welsch Memorial Prize Scholarship in Computer Science (Hamilton College 2018)</li>
+	  <li>Winner of The Edwin B. Lee, Jr. Prize in Asian History/Asian Studies for senior thesis (Hamilton College 2018)</li>
+	  <li>Completed 13-year Japanese immersion program (Portland Public Schools 2014)</li>
+	  <li>Editor of national award-winning Grant Magazine (Grant High School 2013 - 14)</li>
+	</ul>
+
+      </div>
+    </div>
+
+    
     <!-- Footer -->
-    <div class="row">
-      <div class="col-12 footer">
-	<div class="col-3"></div>
-	<ul>
-          <li class="col-2"><a href="mailto:mmontgomery@protonmail.com"                           >Email me</a></li>
-          <li class="col-2"><a href="https://github.com/m-montgomery" target="_blank"             >View my Github</a></li>
-          <li class="col-2"><a href="https://www.linkedin.com/in/mayaumontgomery/" target="_blank">Visit my LinkedIn</a></li>
-	</ul>
-	<div class="col-3"></div>
-      </div>
+    <div class="row footer">
+      <div class="col-3 hide"></div>
+      <ul>
+        <li class="col-2"><a href="mailto:mmontgomery@protonmail.com"                           >Email me</a></li>
+        <li class="col-2"><a href="https://github.com/m-montgomery"              target="_blank">View my Github</a></li>
+        <li class="col-2"><a href="https://www.linkedin.com/in/mayaumontgomery/" target="_blank">Visit my LinkedIn</a></li>
+      </ul>
+      <div class="col-3 hide"></div>
     </div>
 
     <script src="scripts/script.js"></script>

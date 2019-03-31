@@ -1,6 +1,6 @@
 /*
    AUTHOR:  Maya Montgomery
-   UPDATED: 1/19/19
+   UPDATED: 3/31/19
    
    An implementation of the classic Snake game. Control the snake
    with the arrow keys; you can only make a right or a left from
@@ -24,6 +24,8 @@ color SNAKECOLOR = #0C8311;
 
 void setup() {
   size(600, 600);
+  surface.setResizable(true);
+  
   textAlign(CENTER, CENTER);
   gameover = false;
   screen = true;
@@ -42,6 +44,13 @@ void draw() {
   frameRate(20);
   background(255);
   
+  // check for game over
+  if (snake.outOfBounds(width, height) || snake.selfCollision()) {
+    gameover = true;
+    displayScreen("GAME OVER");
+    return;
+  }
+  
   // display randomly appearing snacks
   addSnacks();
   for (Snack s : snacks)
@@ -52,13 +61,7 @@ void draw() {
   
   // move snake and check for snacks to eat
   snake.move();
-  snake.checkForSnacks(snacks);
-  
-  // check for game over
-  if (snake.outOfBounds(width, height) || snake.selfCollision()) {
-    gameover = true;
-    displayScreen("GAME OVER");
-  }
+  snake.checkForSnacks(snacks);  
 }
 
 
@@ -79,6 +82,11 @@ void keyPressed() {
   // check for new game request
   if (screen && key == ' ')
     newGame();
+  else if (key == ' ') {
+    setSize(800, 800);
+    surface.setSize(800, 800);
+    //surface.resize(800, 800);
+  }
 }
 
 

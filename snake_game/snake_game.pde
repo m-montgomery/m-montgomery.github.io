@@ -24,7 +24,6 @@ color SNAKECOLOR = #0C8311;
 
 void setup() {
   size(600, 600);
-  surface.setResizable(true);
   
   textAlign(CENTER, CENTER);
   gameover = false;
